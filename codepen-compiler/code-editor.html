@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="code.css">
+    <link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/lib/codemirror.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/lib/codemirror.min.js"></script>
+
+    <!--  mode HTML, CSS, dan JS -->
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/mode/xml/xml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/mode/javascript/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/mode/css/css.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/theme/darcula.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="container">
+        <h1>Code Editor 💻</h1>
+
+        <div class="editor">
+            <div class="left">
+                <label for=""><i class='bx bxl-html5'></i> HTML</label>
+                <textarea onkeyup="run()" spellcheck="false" id="html-code"></textarea>
+
+                <label for=""><i class='bx bxl-css3'></i> CSS</label>
+                <textarea onkeyup="run()" spellcheck="false" id="css-code"></textarea>
+                
+                <label for=""><i class='bx bxl-javascript'></i> Javascript</label>
+                <textarea onkeyup="run()" spellcheck="false" id="js-code"></textarea>
+            </div>
+
+            <div class="right">
+                <label for=""><i class='bx bx-play'></i> Output</label>
+                <iframe src="" id="output"></iframe>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

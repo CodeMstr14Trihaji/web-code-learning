@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #1e1e2f;
+  color: #f8f8f2;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1e2f;
+}
+
+.container h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #f8f8f2;
+  background-color: #121212;
+  padding: 1rem 2rem;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+.editor {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.left {
+  flex: 1.2;
+  background-color: #252744;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.right {
+  flex: 1;
+  background-color: #1b1c2e;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #f8f8f2;
+  margin-bottom: 6px;
+  gap: 6px;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  background-color: #1e1e1e;
+  color: #f8f8f2;
+  font-size: 15 px;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  resize: vertical;
+  outline: none;
+  font-family: monospace;
+}
+
+/* Untuk CodeMirror editor jika aktif */
+.CodeMirror {
+  font-family: 'Consolas', 'Courier New', monospace !important;
+  font-size: 17px !important;
+  line-height: 1.6 !important;
+  height: auto;
+  min-height: 200px;
+  border-radius: 6px;
+  background-color: #1e1e1e;
+  color: #f8f8f2;
+  border: 1px solid #444;
+}
+
+
+.CodeMirror,
+.CodeMirror * {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+  font-size: 15px !important;
+}
+
+
+iframe {
+  flex: 1;
+  width: 100%;
+  background-color: white;
+  border-radius: 6px;
+  border: none;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 4px;
+}
+
+
+
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 20px; 
+  font-weight: 600; 
+  color: #f8f8f2;
+  margin-bottom: 6px;
+  gap: 6px;
+  text-transform: uppercase; 
+}

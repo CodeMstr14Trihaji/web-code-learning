@@ -1,0 +1,291 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #0f172a;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Container untuk isi konten */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Navbar (full‑width background) */
+.navbar {
+  background-color: #134e4a;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+.newsletter-btn {
+  background-color: #14b8a6;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hero Section (full‑width background) */
+.hero {
+  background-color: #0f172a;
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* tambahkan padding horizontal agar selalu ada margin */
+  padding: 4rem 1.5rem;
+}
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero-text p {
+  margin-bottom: 1.5rem;
+  color: #cbd5e1;
+}
+.buttons button {
+  margin-right: 1rem;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.primary {
+  background-color: #14b8a6;
+  color: white;
+}
+.secondary {
+  background-color: transparent;
+  color: #14b8a6;
+  border: 1px solid #14b8a6;
+}
+.hero-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Kategori Section (full‑width background) */
+.kategori {
+  background-color: #0e1e3d;
+}
+.kategori .container {
+  text-align: center;
+  /* tambahkan padding horizontal */
+  padding: 2rem 1.5rem;
+}
+.kategori h2 {
+  color: #2dd4bf;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card a {
+    text-decoration: none;
+    color: #7dd3fc;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  background-color: #1e293b;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 280px;
+  text-align: left;
+}
+.card h3 {
+  color: #7dd3fc;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer (full‑width background) */
+.footer {
+  background-color: #1e293b;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+.footer .footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 0;
+  border-bottom: 1px solid #334155;
+}
+.footer .footer-top .container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  /* container masih punya padding horizontal */
+}
+.footer-brand {
+  flex: 1 1 250px;
+}
+.footer-brand h2 {
+  font-family: 'Segoe Script', sans-serif;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.footer-brand span {
+  font-weight: bold;
+}
+.footer-brand p {
+  line-height: 1.5;
+}
+.footer-links {
+  display: flex;
+  flex: 3 1 600px;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.footer-links h3 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links ul li {
+  margin-bottom: 0.4rem;
+}
+.footer-links ul li a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+.footer-bottom {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.footer-bottom p {
+  margin: 0.5rem 0;
+}
+
+/* Perbaiki sendiri! */
+.social-icons a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  text-decoration: underline;
+}
+
+/* Perbaiki atas  */
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+.footer-bottom .copyright {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 0.8rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .hero .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* biar horizontal padding tetap ada */
+    padding: 4rem 1.5rem;
+  }
+  .hero-text, .hero-image {
+    width: 100%;
+    min-width: 0;
+  }
+  .hero-image {
+    margin-top: 2rem;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+  .footer .footer-top .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer-bottom .social-icons {
+    flex-wrap: wrap;
+  }
+}
