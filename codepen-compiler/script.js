@@ -30,7 +30,6 @@ function run() {
         </html>`;
 }
 
-// Event listener agar selalu update saat ngetik
 htmlEditor.on("change", run);
 cssEditor.on("change", run);
 jsEditor.on("change", run);
