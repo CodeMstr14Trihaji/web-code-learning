@@ -1,6 +1,5 @@
 # web-code-learning
-JANGAN AMBIL DARI BRANCH INI, AMBIL YANG TESTING!
-GESER BRANCH!
+Branch login form aja haha
 
 Halo kawan, anggota kelompoku terdiri dari:
 1. Trihaji Khoerur Rohman
