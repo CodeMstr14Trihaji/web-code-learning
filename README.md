@@ -1,5 +1,6 @@
 # web-code-learning
-Repository yang berisi proses pembuatan website code-learning untuk tugas akhir
+JANGAN AMBIL DARI BRANCH INI, AMBIL YANG TESTING!
+GESER BRANCH!
 
 Halo kawan, anggota kelompoku terdiri dari:
 1. Trihaji Khoerur Rohman
