@@ -51,6 +51,20 @@ body {
   cursor: pointer;
 }
 
+.nav-links li a {
+  text-decoration: none;
+  padding: 8px 12px;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a:active {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+}
+
+
 /* Hero Section (full‑width background) */
 .hero {
   background-color: #0f172a;

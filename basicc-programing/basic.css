@@ -1,0 +1,117 @@
+body {
+  font-family: sans-serif;
+  background-color: #3a5792;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px 20px;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #16a34a;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 0;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.card-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 0 20px 60px;
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Animasi saat kursor mendekati kartu */
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Animasi saat diklik (ditekan) */
+.card:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Animasi saat diklik */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.3s ease;
+}
+
+
+.card-header {
+  background-color: rgb(73, 101, 228);
+  color: white;
+  padding: 24px;
+}
+
+.badge {
+  font-size: 10px;
+  text-transform: uppercase;
+  background-color: #246bd7;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.author {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.card-body {
+  padding: 24px;
+}
+
+.card-subtitle {
+  font-weight: bold;
+  font-size: 16px;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.card-desc {
+  font-size: 14px;
+  color: #6b7280;
+}
